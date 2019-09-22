@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29306.81
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigitsOfPi", "DigitsOfPi\DigitsOfPi.csproj", "{40C14B8A-DCFA-469A-A8C6-63731A4CF417}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigitsOfPi.Engine", "DigitsOfPi.Engine\DigitsOfPi.Engine.csproj", "{0FAEC7D2-4D09-4060-BCD1-1826021702F2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{40C14B8A-DCFA-469A-A8C6-63731A4CF417}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40C14B8A-DCFA-469A-A8C6-63731A4CF417}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40C14B8A-DCFA-469A-A8C6-63731A4CF417}.Debug|x64.ActiveCfg = Debug|x64
+		{40C14B8A-DCFA-469A-A8C6-63731A4CF417}.Debug|x64.Build.0 = Debug|x64
+		{40C14B8A-DCFA-469A-A8C6-63731A4CF417}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40C14B8A-DCFA-469A-A8C6-63731A4CF417}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40C14B8A-DCFA-469A-A8C6-63731A4CF417}.Release|x64.ActiveCfg = Release|x64
+		{40C14B8A-DCFA-469A-A8C6-63731A4CF417}.Release|x64.Build.0 = Release|x64
+		{0FAEC7D2-4D09-4060-BCD1-1826021702F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FAEC7D2-4D09-4060-BCD1-1826021702F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FAEC7D2-4D09-4060-BCD1-1826021702F2}.Debug|x64.ActiveCfg = Debug|x64
+		{0FAEC7D2-4D09-4060-BCD1-1826021702F2}.Debug|x64.Build.0 = Debug|x64
+		{0FAEC7D2-4D09-4060-BCD1-1826021702F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FAEC7D2-4D09-4060-BCD1-1826021702F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FAEC7D2-4D09-4060-BCD1-1826021702F2}.Release|x64.ActiveCfg = Release|x64
+		{0FAEC7D2-4D09-4060-BCD1-1826021702F2}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		VisualSVNWorkingCopyRoot = .
+		SolutionGuid = {06CFE141-280B-4148-9415-28FCD0A3AFA3}
+	EndGlobalSection
+EndGlobal
