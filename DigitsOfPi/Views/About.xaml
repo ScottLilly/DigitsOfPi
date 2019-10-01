@@ -9,29 +9,57 @@
         WindowStartupLocation="CenterOwner"
         ResizeMode="NoResize"
         Title="About Digits of Pi" 
-        Height="200" Width="300"
+        Height="250" Width="400"
         FontSize="11pt">
 
     <Grid Margin="10,10,10,10">
         <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <StackPanel Grid.Row="0" Grid.Column="0"
-                    HorizontalAlignment="Left"
-                    Orientation="Vertical">
-            <TextBlock Text="Digits of Pi"/>
-            <TextBlock Text="{Binding AppVersion}"/>
-            <TextBlock Text="Copyright 2019, Scott Lilly"/>
-            <TextBlock Text="All Rights Reserved"/>
-        </StackPanel>
+        <TextBlock Grid.Row="0" Grid.Column="0" 
+                   Grid.ColumnSpan="2" 
+                   Text="Digits of Pi"/>
+        <TextBlock Grid.Row="1" Grid.Column="0" 
+                   Grid.ColumnSpan="2"
+                   Text="{Binding AppVersion}"/>
+        <TextBlock Grid.Row="2" Grid.Column="0" 
+                   Grid.ColumnSpan="2"
+                   Text="Copyright 2019, Scott Lilly"/>
+        <TextBlock Grid.Row="3" Grid.Column="0" 
+                   Grid.ColumnSpan="2"
+                   Text="All Rights Reserved"/>
 
-        <Button Grid.Row="2" Grid.Column="0"
+        <TextBlock Grid.Row="4" Grid.Column="0" 
+                   Text="Source code:"/>
+        <TextBlock Grid.Row="4" Grid.Column="1" >
+            <Hyperlink NavigateUri="https://github.com/ScottLilly/DigitsOfPi"
+                       RequestNavigate="Hyperlink_OnRequestNavigate">
+                https://github.com/ScottLilly/DigitsOfPi
+            </Hyperlink>
+        </TextBlock>
+
+        <TextBlock Grid.Row="5" Grid.Column="0" 
+                   Text="Support page:"/>
+        <TextBlock Grid.Row="5" Grid.Column="1" >
+            <Hyperlink NavigateUri="https://scottlilly.com/wpf-program-to-test-your-memory-of-the-digits-of-pi/"
+                       RequestNavigate="Hyperlink_OnRequestNavigate">
+                https://scottlilly.com/DigitsOfPi
+            </Hyperlink>
+        </TextBlock>
+
+        <Button Grid.Row="7" Grid.Column="0"
                 HorizontalAlignment="Right"
                 IsDefault="True"
                 Content="OK"

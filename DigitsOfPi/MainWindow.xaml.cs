@@ -30,6 +30,13 @@ namespace DigitsOfPi
             Close();
         }
 
+        private void PacedAudio_OnClick(object sender, RoutedEventArgs e)
+        {
+            PacedAudio pacedAudio = new PacedAudio();
+            pacedAudio.Owner = this;
+            pacedAudio.ShowDialog();
+        }
+
         private void HelpAbout_OnClick(object sender, RoutedEventArgs e)
         {
             About about = new About();

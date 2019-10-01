@@ -60,6 +60,10 @@
                 <MenuItem Header="Exit"
                           Click="Exit_OnClick"/>
             </MenuItem>
+            <MenuItem Header="Training">
+                <MenuItem Header="Paced Audio..."
+                          Click="PacedAudio_OnClick"/>
+            </MenuItem>
             <MenuItem Header="Help">
                 <MenuItem Header="View Help"/>
                 <Separator/>

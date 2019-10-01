@@ -1,4 +1,5 @@
 ﻿using System.Windows;
+using System.Windows.Navigation;
 using DigitsOfPi.Engine.ViewModels;
 
 namespace DigitsOfPi.Views
@@ -15,6 +16,11 @@ namespace DigitsOfPi.Views
         private void OK_OnClick(object sender, RoutedEventArgs e)
         {
             Close();
+        }
+
+        private void Hyperlink_OnRequestNavigate(object sender, RequestNavigateEventArgs e)
+        {
+            System.Diagnostics.Process.Start(e.Uri.ToString());
         }
     }
 }

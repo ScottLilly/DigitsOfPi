@@ -109,6 +109,13 @@ namespace DigitsOfPi.Engine.ViewModels
             CharactersEntered += character;
         }
 
+        public string GetCharacter(int index)
+        {
+            string character = _digitsOfPi.Substring(index, 1);
+
+            return character == "." ? "point" : character;
+        }
+
         private void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
