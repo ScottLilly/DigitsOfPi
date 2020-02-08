@@ -33,6 +33,16 @@ namespace DigitsOfPi.Engine.ViewModels
 
             while(_continueSpeaking)
             {
+                _speechSynthesizer.Rate = 1;
+
+                _speechSynthesizer.SpeakAsync("You have an excellent memory");
+                await Task.Delay(2000, cancellationToken);
+
+                _speechSynthesizer.SpeakAsync("You memorize numbers easily");
+                await Task.Delay(4000, cancellationToken);
+
+                SetupVoice();
+
                 _speechSynthesizer.SpeakAsync("3");
                 _speechSynthesizer.SpeakAsync("point");
 
