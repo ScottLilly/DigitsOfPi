@@ -1,3 +1,13 @@
+# DigitsOfPi
+
+<table>
+  <tbody>
+	<tr>
+	  <td>This project is inactive and has been archived to read-only mode. Please contact me if you want it reopened.</td>
+	</tr>
+  </tbody>
+</table>
+
 This is a WPF application to help you test your memory of the digits of Pi.
 
 After downloading the solution, restore the NuGet packages - because this project uses the Prism package.
